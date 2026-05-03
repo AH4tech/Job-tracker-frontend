@@ -1,14 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import { AuthProvider } from './context/AuthContext';
+import logo from "./logo.svg";
+import "./App.css";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
-   <AuthProvider>
-    {
-      // everyone will ask from here....
-    }
-   </AuthProvider>
+    // storage entire application m available...
+    <Provider store={store}>
+      <AuthProvider>
+        {
+          // everyone will ask from here....
+        }
+      </AuthProvider>
+    </Provider>
   );
 }
 
